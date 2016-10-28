@@ -1,5 +1,6 @@
-const React, { PropTypes }      = require('react');
-const Todo                      = require('./Todo');
+import React, {PropTypes} from 'react';
+const Todo                      = require('./Todo').default;
+
 
 const TodoList = ({ todos, onTodoClick }) => (
     <ul>

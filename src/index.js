@@ -2,14 +2,13 @@ const React           = require('react');
 const { render }      = require('react-dom');
 const { Provider }    = require('react-redux');
 const { createStore } = require('redux');
-const todoApp         = require('../reducers/combineReducers').default;
-const { TodoList }    = require('./components/containers');
-
+const todoApp         = require('./reducers/reducers').default;
+const App             = require('./components/App').default;
 const store = createStore(todoApp);
 
 render(
     <Provider store={store}>
-        <TodoList />
+        <App />
     </Provider>,
     document.getElementById('app') 
 );

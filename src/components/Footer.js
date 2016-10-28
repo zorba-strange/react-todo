@@ -1,5 +1,5 @@
 const React           = require('react');
-const FilterLink      = require('../containers/FilterLink');
+const FilterLink      = require('../containers/FilterLinks').default;
 
 
 const Footer = () => (

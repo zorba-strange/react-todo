@@ -1,6 +1,6 @@
 const { connect }               = require('react-redux');
 const { toggleTodo }            = require('../actions/actionCreators');
-const TodoList                  = require('../components/TodoList');
+const TodoList                  = require('../components/TodoList').default;
 
 
 const getVisibilityTodos = (todos, filter) => {

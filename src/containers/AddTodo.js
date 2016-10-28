@@ -1,6 +1,6 @@
 const React               = require('react');
 const { connect }         = require('react-redux');
-const { addTodo }         = require('../actions/actionCreator');
+const { addTodo }         = require('../actions/actionCreators').addTodo;
 
 
 let AddTodo = ({ dispatch }) => {

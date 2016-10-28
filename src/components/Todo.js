@@ -1,4 +1,4 @@
-const React, { PropTypes } = require('react');
+import React, {PropTypes} from 'react';
 
 const Todo = ({ onClick, completed, text }) => ( 
     <li 
