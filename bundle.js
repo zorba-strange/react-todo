@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7e2333c1d04a8494dfa5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c15bdc7c258f9dd6d7b1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -36362,9 +36362,12 @@
 	    return Math.random().toString(34).slice(2);
 	};
 
+	var ADD_TODO = 'ADD_TODO';
+	var TOGGLE_TODO = 'TOGGLE_TODO';
+
 	function addTodo(text) {
 	    return {
-	        type: 'ADD_TODO',
+	        type: ADD_TODO,
 	        payload: {
 	            id: uuid(),
 	            isDone: false,
@@ -36375,7 +36378,7 @@
 
 	function toggleTodo(id) {
 	    return {
-	        type: 'TOGGLE_TODO',
+	        type: TOGGLE_TODO,
 	        payload: id
 	    };
 	}

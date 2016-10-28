@@ -1,19 +1,22 @@
 const uuid = () => Math.random().toString(34).slice(2);
 
-export function addTodo(text) {
+const ADD_TODO = 'ADD_TODO';
+const TOGGLE_TODO = 'TOGGLE_TODO';
+
+export const addTodo = (text) => {
     return {
         type: 'ADD_TODO',
         payload: {
-            id: uuid(),
+            id: uuid,
             isDone: false,
-            text: text
+            text,
         }
-    };
+    }
 }
 
-export function toggleTodo(id){
+export const toggleTodo = (id) => {
     return {
         type: 'TOGGLE_TODO',
-        payload: id
+        payload: id,
     }
 }
