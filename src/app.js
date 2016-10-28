@@ -2,10 +2,10 @@ const React           = require('react');
 const { render }      = require('react-dom');
 const { Provider }    = require('react-redux');
 const { createStore } = require('redux');
-const reducer         = require('./reducer').default;
-const { TodoList }    = require('./containers');
+const todoApp         = require('../reducers/combineReducers').default;
+const { TodoList }    = require('./components/containers');
 
-const store = createStore(reducer);
+const store = createStore(todoApp);
 
 render(
     <Provider store={store}>
